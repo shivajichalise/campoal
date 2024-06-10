@@ -25,6 +25,11 @@ export default {
                 secondaryBackground: "hsl(var(--secondary-background))",
                 tertiaryBackground: "hsl(var(--tertiary-background))",
                 foreground: "hsl(var(--foreground))",
+                text: {
+                    300: "hsl(var(--text-300))",
+                    200: "hsl(var(--text-200))",
+                    100: "hsl(var(--text-100))",
+                },
                 primary: {
                     DEFAULT: "hsl(var(--primary))",
                     foreground: "hsl(var(--primary-foreground))",
@@ -77,4 +82,3 @@ export default {
     },
     plugins: [require("tailwindcss-animate")],
 }
-

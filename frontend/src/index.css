@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +10,10 @@
 }
 
 :root {
-    font-family: 'Circular Std', sans-serif;
+    /* font-family: 'Circular Std', sans-serif; */
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 @layer base {
@@ -47,6 +52,10 @@
         --ring: 222.2 84% 4.9%;
 
         --radius: 0.5rem;
+
+        --text-300: 0 0% 0%;
+        --text-200: 240 14% 20%;
+        --text-100: 240 10% 42%;
     }
 
     .dark {
