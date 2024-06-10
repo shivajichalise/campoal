@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./fonts/circular-std-medium-500.ttf') format('truetype');
+}
+
+:root {
+    font-family: 'Circular Std', sans-serif;
+}
+
 @layer base {
     :root {
         --background: 38 100% 98%;

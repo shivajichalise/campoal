@@ -7,12 +7,12 @@
         "config": "tailwind.config.js",
         "css": "src/index.css",
         "baseColor": "neutral",
-        "cssVariables": true,
+        "cssVariables": false,
         "prefix": ""
     },
     "aliases": {
+        "assets": "@/assets",
         "components": "@/components",
         "utils": "@/lib/utils"
     }
 }
-
