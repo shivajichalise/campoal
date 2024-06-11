@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import PlatformUsers from "./components/platform-users"
+import BelieveInVoice from "./components/believe-in-your-voice"
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <Navbar />
             <Hero />
             <PlatformUsers />
+            <BelieveInVoice />
         </>
     )
 }
