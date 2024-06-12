@@ -6,6 +6,7 @@ import OurValues from "./components/our-values"
 import OurStory from "./components/our-story"
 import hero1Image from "@/assets/hero.png"
 import OurVision from "./components/our-vision"
+import OurTeam from "./components/our-team"
 
 function App() {
     const hero1 = {
@@ -23,6 +24,7 @@ function App() {
             <OurValues />
             <OurStory />
             <OurVision />
+            <OurTeam />
         </>
     )
 }
