@@ -3,6 +3,7 @@ import Hero from "@/components/hero"
 import PlatformUsers from "./components/platform-users"
 import BelieveInVoice from "./components/believe-in-your-voice"
 import OurValues from "./components/our-values"
+import OurStory from "./components/our-story"
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <PlatformUsers />
             <BelieveInVoice />
             <OurValues />
+            <OurStory />
         </>
     )
 }
