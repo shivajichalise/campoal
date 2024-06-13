@@ -38,7 +38,7 @@ const Contact = () => {
                                         </Label>
                                         <Input
                                             id="your-name"
-                                            className="lg:h-12"
+                                            className="focus-visible:ring-primary lg:h-12 lg:text-lg"
                                         />
                                     </div>
                                     <div className="flex w-full flex-col space-y-1.5 lg:w-11/12">
@@ -50,7 +50,7 @@ const Contact = () => {
                                         </Label>
                                         <Input
                                             id="company-name"
-                                            className="lg:h-12"
+                                            className="focus-visible:ring-primary lg:h-12 lg:text-lg"
                                         />
                                     </div>
                                     <div className="flex w-full flex-col space-y-1.5 lg:w-11/12">
@@ -62,7 +62,7 @@ const Contact = () => {
                                         </Label>
                                         <Input
                                             id="your-email"
-                                            className="lg:h-12"
+                                            className="focus-visible:ring-primary lg:h-12 lg:text-lg"
                                         />
                                     </div>
                                     <div className="flex w-full flex-col space-y-1.5 lg:w-11/12">
@@ -72,7 +72,10 @@ const Contact = () => {
                                         >
                                             Subject
                                         </Label>
-                                        <Input id="subject" className="h-12" />
+                                        <Input
+                                            id="subject"
+                                            className="focus-visible:ring-primary lg:h-12 lg:text-lg"
+                                        />
                                     </div>
                                     <div className="flex h-full w-full flex-col space-y-1.5 lg:w-11/12">
                                         <Label
@@ -81,7 +84,10 @@ const Contact = () => {
                                         >
                                             Message
                                         </Label>
-                                        <Textarea rows={10} />
+                                        <Textarea
+                                            rows={10}
+                                            className="focus-visible:ring-primary lg:text-lg"
+                                        />
                                     </div>
                                 </div>
                             </form>
