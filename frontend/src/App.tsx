@@ -8,6 +8,7 @@ import hero1Image from "@/assets/hero.png"
 import OurVision from "./components/our-vision"
 import OurTeam from "./components/our-team"
 import Contact from "./components/contact"
+import Footer from "./components/footer"
 
 function App() {
     const hero1 = {
@@ -27,6 +28,7 @@ function App() {
             <OurVision />
             <OurTeam />
             <Contact />
+            <Footer />
         </>
     )
 }
