@@ -1,6 +1,6 @@
 import logo from "@/assets/campoal-logo.svg"
 import { Button } from "./ui/button"
-import { Menu, Search, X } from "lucide-react"
+import { Edit, Menu, Search, X } from "lucide-react"
 import { DualButton } from "./dual-button"
 import {
     NavigationMenu,
@@ -10,7 +10,19 @@ import {
 import GlobalButton from "./global-button"
 import { useState } from "react"
 import { Input } from "./ui/input"
+import { Label } from "@/components/ui/label"
+import {
+    Sheet,
+    SheetClose,
+    SheetContent,
+    SheetDescription,
+    SheetFooter,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet"
 import StartCampaignButton from "./start-campaign-button"
+import { Separator } from "./ui/separator"
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
@@ -144,104 +156,95 @@ const Navbar = () => {
                         size="default"
                     />
                 </div>
-                <Button
-                    size="sm"
-                    variant="outline"
-                    className="ml-3 xl:hidden"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                >
-                    <Menu className="h-3 w-3 md:h-4 md:w-4" />
-                </Button>
+
+                <Sheet>
+                    <SheetTrigger asChild>
+                        <Button
+                            size="sm"
+                            variant="outline"
+                            className="ml-3 xl:hidden"
+                        >
+                            <Menu className="h-3 w-3 md:h-4 md:w-4" />
+                        </Button>
+                    </SheetTrigger>
+                    <SheetContent className="xl:hidden">
+                        <div className="mt-5 flex w-full items-center space-x-2">
+                            <Input
+                                type="text"
+                                placeholder="Search..."
+                                className="focus-visible:ring-primary"
+                            />
+                            <Button type="submit" size="icon" className="">
+                                <Search className="h-3 w-3 xl:h-4 xl:w-4" />
+                            </Button>
+                        </div>
+                        <div className="mt-5">
+                            <Button className="w-full">
+                                <Edit className="mr-2 h-4 w-4" /> Start a
+                                campaign
+                            </Button>
+                        </div>
+                        <Separator className="mb-3 mt-10" />
+                        <div className="flex flex-col items-end">
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/campaign"
+                            >
+                                Campaign
+                            </a>
+                            <Separator className="my-3" />
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/fundraiser"
+                            >
+                                Fundraiser
+                            </a>
+                            <Separator className="my-3" />
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/membership"
+                            >
+                                Membership
+                            </a>
+                            <Separator className="my-3" />
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/about"
+                            >
+                                About
+                            </a>
+                            <Separator className="my-3" />
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/contact"
+                            >
+                                Contact
+                            </a>
+                            <Separator className="my-3" />
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/blog"
+                            >
+                                Blog
+                            </a>
+                            <Separator className="my-3" />
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/signup"
+                            >
+                                Sign up
+                            </a>
+                            <Separator className="my-3" />
+                            <a
+                                className="hover:text-primary text-xl"
+                                href="/signin"
+                            >
+                                Sign in
+                            </a>
+                        </div>
+                    </SheetContent>
+                </Sheet>
             </nav>
-            <div
-                className={`bg-primary absolute flex w-full flex-col items-center justify-center ${isMobileMenuOpen ? "block" : "hidden"} py-5 xl:hidden`}
-            >
-                <ul className="flex w-full flex-col items-end justify-center gap-5 pr-5 text-xl text-white">
-                    <li className="">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => {
-                                setIsMobileMenuOpen(false)
-                                toggleSearch()
-                            }}
-                        >
-                            Search
-                        </a>
-                    </li>
-                    <li className="">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/campaign"
-                        >
-                            Campaign
-                        </a>
-                    </li>
-                    <li className="">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/fundraiser"
-                        >
-                            Fundraiser
-                        </a>
-                    </li>
-                    <li className="">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/membership"
-                        >
-                            Membership
-                        </a>
-                    </li>
-                    <li className="">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/about"
-                        >
-                            About
-                        </a>
-                    </li>
-                    <li className="">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/contact"
-                        >
-                            Contact
-                        </a>
-                    </li>
-                    <li className="">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/blog"
-                        >
-                            Blog
-                        </a>
-                    </li>
-                    <li className="block lg:hidden">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/signup"
-                        >
-                            Sign up
-                        </a>
-                    </li>
-                    <li className="block lg:hidden">
-                        <a
-                            className="hover:bg-primary-content"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            href="/signin"
-                        >
-                            Sign in
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </>
     )
 }
