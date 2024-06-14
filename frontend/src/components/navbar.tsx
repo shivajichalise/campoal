@@ -1,6 +1,6 @@
 import logo from "@/assets/campoal-logo.svg"
 import { Button } from "./ui/button"
-import { Edit, Menu, Search, X } from "lucide-react"
+import { Menu, Search, X } from "lucide-react"
 import { DualButton } from "./dual-button"
 import {
     NavigationMenu,
@@ -13,6 +13,7 @@ import { Input } from "./ui/input"
 import StartCampaignButton from "./start-campaign-button"
 
 const Navbar = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
     const [userWantsToSearch, setUserWantsToSearch] = useState(false)
 
     const toggleSearch = () => {
@@ -146,11 +147,101 @@ const Navbar = () => {
                 <Button
                     size="sm"
                     variant="outline"
-                    className="xs:hidden ml-3 xl:hidden"
+                    className="ml-3 xl:hidden"
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     <Menu className="h-3 w-3 md:h-4 md:w-4" />
                 </Button>
             </nav>
+            <div
+                className={`bg-primary absolute flex w-full flex-col items-center justify-center ${isMobileMenuOpen ? "block" : "hidden"} py-5 xl:hidden`}
+            >
+                <ul className="flex w-full flex-col items-end justify-center gap-5 pr-5 text-xl text-white">
+                    <li className="">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => {
+                                setIsMobileMenuOpen(false)
+                                toggleSearch()
+                            }}
+                        >
+                            Search
+                        </a>
+                    </li>
+                    <li className="">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/campaign"
+                        >
+                            Campaign
+                        </a>
+                    </li>
+                    <li className="">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/fundraiser"
+                        >
+                            Fundraiser
+                        </a>
+                    </li>
+                    <li className="">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/membership"
+                        >
+                            Membership
+                        </a>
+                    </li>
+                    <li className="">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/about"
+                        >
+                            About
+                        </a>
+                    </li>
+                    <li className="">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/contact"
+                        >
+                            Contact
+                        </a>
+                    </li>
+                    <li className="">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/blog"
+                        >
+                            Blog
+                        </a>
+                    </li>
+                    <li className="block lg:hidden">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/signup"
+                        >
+                            Sign up
+                        </a>
+                    </li>
+                    <li className="block lg:hidden">
+                        <a
+                            className="hover:bg-primary-content"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            href="/signin"
+                        >
+                            Sign in
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </>
     )
 }
