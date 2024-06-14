@@ -20,7 +20,7 @@ const PlatformUsers = () => {
                     </h1>
                 </div>
                 <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <Card className="bg-primary h-72 w-64 rounded-2xl">
+                    <Card className="bg-primary h-72 w-64 rounded-2xl hover:mb-[5px] hover:mt-[-5px]">
                         <CardContent className="flex h-full flex-col items-center justify-around">
                             <div className="mt-5 flex h-20 w-20 items-center justify-center rounded-full bg-white">
                                 <img src={activistsIcon} />
@@ -37,7 +37,7 @@ const PlatformUsers = () => {
                             </div>
                         </CardContent>
                     </Card>
-                    <Card className="bg-primary h-72 w-64 rounded-2xl">
+                    <Card className="bg-primary h-72 w-64 rounded-2xl hover:mb-[5px] hover:mt-[-5px]">
                         <CardContent className="flex h-full flex-col items-center justify-around">
                             <div className="mt-5 flex h-20 w-20 items-center justify-center rounded-full bg-white">
                                 <img src={legislatorsIcon} />
@@ -54,7 +54,7 @@ const PlatformUsers = () => {
                             </div>
                         </CardContent>
                     </Card>
-                    <Card className="bg-primary h-72 w-64 rounded-2xl">
+                    <Card className="bg-primary h-72 w-64 rounded-2xl hover:mb-[5px] hover:mt-[-5px]">
                         <CardContent className="flex h-full flex-col items-center justify-around">
                             <div className="mt-5 flex h-20 w-20 items-center justify-center rounded-full bg-white">
                                 <img src={organizationsIcon} />
@@ -70,7 +70,7 @@ const PlatformUsers = () => {
                             </div>
                         </CardContent>
                     </Card>
-                    <Card className="bg-primary h-72 w-64 rounded-2xl">
+                    <Card className="bg-primary h-72 w-64 rounded-2xl hover:mb-[5px] hover:mt-[-5px]">
                         <CardContent className="flex h-full flex-col items-center justify-around">
                             <div className="mt-5 flex h-20 w-20 items-center justify-center rounded-full bg-white">
                                 <img src={reportersIcon} />

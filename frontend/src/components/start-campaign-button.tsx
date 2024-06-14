@@ -11,9 +11,23 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectLabel,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
 import { Edit } from "lucide-react"
+import { toast } from "sonner"
 
 const StartCampaignButton = () => {
+    const startCampaign = () => {
+        toast.success("Campaign is started.")
+    }
+
     return (
         <Sheet>
             <SheetTrigger asChild>
@@ -32,8 +46,8 @@ const StartCampaignButton = () => {
                     </SheetDescription>
                 </SheetHeader>
                 <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="name" className="text-right">
+                    <div className="flex items-center justify-center gap-4">
+                        <Label htmlFor="title" className="text-right">
                             Title
                         </Label>
                         <Input
@@ -42,10 +56,46 @@ const StartCampaignButton = () => {
                             className="col-span-3"
                         />
                     </div>
+                    <div className="flex items-center justify-center gap-4">
+                        <Label htmlFor="goal" className="text-right">
+                            Goal
+                        </Label>
+                        <Input id="goal" value="5000" className="col-span-3" />
+                    </div>
+                    <div className="flex items-center justify-center gap-4">
+                        <Label htmlFor="vategory" className="text-right">
+                            Category
+                        </Label>
+                        <Select defaultValue="1">
+                            <SelectTrigger className="">
+                                <SelectValue placeholder="Select a category" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectGroup>
+                                    <SelectLabel>Category</SelectLabel>
+                                    <SelectItem value="1">
+                                        Environmental Conservation
+                                    </SelectItem>
+                                    <SelectItem value="2">
+                                        Social Justice
+                                    </SelectItem>
+                                    <SelectItem value="3">
+                                        Healthcare
+                                    </SelectItem>
+                                    <SelectItem value="4">Education</SelectItem>
+                                    <SelectItem value="5">
+                                        Community Development
+                                    </SelectItem>
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
+                    </div>
                 </div>
                 <SheetFooter>
                     <SheetClose asChild>
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit" onClick={startCampaign}>
+                            Submit
+                        </Button>
                     </SheetClose>
                 </SheetFooter>
             </SheetContent>

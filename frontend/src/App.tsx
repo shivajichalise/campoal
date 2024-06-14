@@ -9,11 +9,13 @@ import OurVision from "./components/our-vision"
 import OurTeam from "./components/our-team"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
+import { Toaster } from "sonner"
 
 function App() {
     const hero1 = {
         heading: "World's Petition Platform",
-        description: "World's Petition Platform",
+        description:
+            "We started in 2016 with the radical idea that anyone, anywhere, should be able to easily and securely to start their own petition. Today, we offer a trusted and easy-to-use platform for social movement accross the world.",
         img: hero1Image,
     }
 
@@ -29,6 +31,7 @@ function App() {
             <OurTeam />
             <Contact />
             <Footer />
+            <Toaster richColors={true} position="top-right" />
         </>
     )
 }
