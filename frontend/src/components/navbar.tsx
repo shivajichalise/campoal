@@ -7,6 +7,7 @@ import {
     NavigationMenuItem,
     NavigationMenuList,
 } from "@/components/ui/navigation-menu"
+import GlobalButton from "./GlobalButton"
 
 const Navbar = () => {
     return (
@@ -14,12 +15,7 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-start gap-10">
                 <img src={logo} className="w-40" />
 
-                <Button
-                    className="hidden rounded-2xl px-6 sm:flex"
-                    variant="outline"
-                >
-                    <Globe className="mr-2 h-4 w-4" /> Global
-                </Button>
+                <GlobalButton />
             </div>
 
             <div className="hidden items-center justify-end gap-4 sm:flex sm:w-2/3">
@@ -106,6 +102,8 @@ const Navbar = () => {
                     secondButtonVariant="default"
                     firstButtonText="Sign up"
                     secondButtonText="Sign in"
+                    firstButtonHref="/signup"
+                    secondButtonHref="/signin"
                     size="default"
                 />
             </div>
