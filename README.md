@@ -33,7 +33,7 @@ if not using docker:
 
 ### Docker
 
-To get started with the follow below steps:
+To get started with the docker usage, follow below steps:
 
 1. Clone this repository to your local machine:
 
@@ -52,7 +52,7 @@ The app will start, which will be available at `http://localhost:5173` in your b
 
 ### Manual
 
-To get started with the follow below steps:
+To get started with the manual process, follow below steps:
 
 1. Clone this repository to your local machine:
 
@@ -117,7 +117,7 @@ campoal/
     └── ...
 ```
 
--   The sole reason for this structure is its capability to allow the separation of concerns. By placing the frontend code in a distinct directory `(frontend)`, it maintains isolation between frontend-related files and configurations from the backend code. This separation simplifies the management and maintenance of each aspect of the application independently.
+-   The sole reason for this structure is its capability to allow the separation of concerns. By placing the frontend code in a distinct directory `(frontend)`, it maintains isolation between frontend-related files and configurations from the backend code (if there's any). This separation simplifies the management and maintenance of each aspect of the application independently.
 -   Having `package.json` in the root directory enables us to use tools like nodemon, concurrently, etc., when working with both frontend and backend.
 -   Additionally, this structure allows for the removal of duplicate files used for configurations. In my case, it's the `.prettierrc.json` configuration file.
 
@@ -133,9 +133,10 @@ campoal/
 
 3. [Shadcn/ui](https://ui.shadcn.com/)
 
--   For beautifully designed components that you can copy and paste into our apps. It's Accessible, customizable and OPEN SOURCE.
+-   For accessing beautifully designed components that we can copy and paste into our apps.
+-   Shadcn/ui is accessible, customizable and OPEN SOURCE.
 
-Above three are the only major libraries that I have used. Except for these below libraries are also used (only used in a place or two):
+Above three are the only major libraries/frameworks that I have used. Except for these below libraries are also used (only used in a place or two):
 
 1. [React Hook Form](https://www.react-hook-form.com/)
 
