@@ -6,8 +6,6 @@ import fb from "@/assets/fb.png"
 import twitter from "@/assets/twitter.png"
 import youtube from "@/assets/youtube.png"
 import medium from "@/assets/medium.png"
-import { Facebook } from "lucide-react"
-import { Button } from "./ui/button"
 
 const Footer = () => {
     return (
