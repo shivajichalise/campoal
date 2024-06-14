@@ -72,7 +72,7 @@ const Navbar = () => {
                                     size="sm"
                                     className="text-black"
                                 >
-                                    Campaign
+                                    <a href="/campaign">Campaign</a>
                                 </Button>
                             </NavigationMenuItem>
 
@@ -82,7 +82,7 @@ const Navbar = () => {
                                     size="sm"
                                     className="text-black"
                                 >
-                                    Fundraiser
+                                    <a href="/fundraiser">Fundraiser</a>
                                 </Button>
                             </NavigationMenuItem>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
                                     size="sm"
                                     className="text-black"
                                 >
-                                    Membership
+                                    <a href="/membership">Membership</a>
                                 </Button>
                             </NavigationMenuItem>
 
@@ -102,7 +102,7 @@ const Navbar = () => {
                                     size="sm"
                                     className="text-black"
                                 >
-                                    About
+                                    <a href="/about">About</a>
                                 </Button>
                             </NavigationMenuItem>
 
@@ -112,7 +112,7 @@ const Navbar = () => {
                                     size="sm"
                                     className="text-black"
                                 >
-                                    Contact
+                                    <a href="/contact">Contact</a>
                                 </Button>
                             </NavigationMenuItem>
 
@@ -122,7 +122,7 @@ const Navbar = () => {
                                     size="sm"
                                     className="text-black"
                                 >
-                                    Blog
+                                    <a href="/blog">Blog</a>
                                 </Button>
                             </NavigationMenuItem>
                         </NavigationMenuList>
