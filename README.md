@@ -3,7 +3,7 @@
 # Campoal
 
 This repository contains the frontend design implementation for Campoal about page.
-Campoal a comprehensive WordPress theme designed to empower users to create petition platforms, foundations, and non-profit websites.
+Campoal is a comprehensive WordPress theme designed to empower users to create petition platforms, foundations, and non-profit websites.
 
 ## Table of Contents
 
