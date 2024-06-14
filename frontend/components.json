@@ -13,6 +13,7 @@
     "aliases": {
         "assets": "@/assets",
         "components": "@/components",
-        "utils": "@/lib/utils"
+        "utils": "@/lib/utils",
+        "schemas": "@/schemas"
     }
 }
