@@ -3,7 +3,7 @@ import voicesImg from "@/assets/voices.png"
 const BelieveInVoice = () => {
     return (
         <div className="flex items-center justify-center px-12 py-16">
-            <div className="flex flex-col items-center gap-10 lg:w-4/5 lg:justify-around">
+            <div className="flex flex-col items-center gap-10 lg:w-4/5 lg:items-start">
                 <h1 className="text-text-200 text-center text-2xl font-semibold md:text-4xl lg:text-left lg:text-5xl">
                     We believe in your voice
                 </h1>

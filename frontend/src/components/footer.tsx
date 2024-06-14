@@ -6,6 +6,8 @@ import fb from "@/assets/fb.png"
 import twitter from "@/assets/twitter.png"
 import youtube from "@/assets/youtube.png"
 import medium from "@/assets/medium.png"
+import { Facebook } from "lucide-react"
+import { Button } from "./ui/button"
 
 const Footer = () => {
     return (
@@ -33,47 +35,193 @@ const Footer = () => {
                     <div className="mt-3 flex flex-col items-center gap-5 xl:items-start">
                         <h4 className="text-lg xl:text-lg">Company</h4>
                         <ul className="flex flex-col items-center justify-center gap-2 xl:items-start">
-                            <li className="text-xs xl:text-sm">About</li>
-                            <li className="text-xs xl:text-sm">Contact</li>
-                            <li className="text-xs xl:text-sm">Careers</li>
-                            <li className="text-xs xl:text-sm">Impact</li>
-                            <li className="text-xs xl:text-sm">Testimonials</li>
-                            <li className="text-xs xl:text-sm">Team members</li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#about"
+                                    className="hover:text-secondary"
+                                >
+                                    About
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#contact"
+                                    className="hover:text-secondary"
+                                >
+                                    Contact
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#careers"
+                                    className="hover:text-secondary"
+                                >
+                                    Careers
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#impact"
+                                    className="hover:text-secondary"
+                                >
+                                    Impact
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#testimonials"
+                                    className="hover:text-secondary"
+                                >
+                                    Testimonials
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#team-members"
+                                    className="hover:text-secondary"
+                                >
+                                    Team members
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="mt-3 flex flex-col items-center gap-5 xl:items-start">
                         <h4 className="text-sm xl:text-lg">Resource</h4>
                         <ul className="flex flex-col items-center justify-center gap-2 xl:items-start">
-                            <li className="text-xs xl:text-sm">Guide</li>
-                            <li className="text-xs xl:text-sm">FAQs</li>
-                            <li className="text-xs xl:text-sm">Press kets</li>
-                            <li className="text-xs xl:text-sm">Compliance</li>
                             <li className="text-xs xl:text-sm">
-                                Privacy Policy
+                                <a
+                                    href="#guide"
+                                    className="hover:text-secondary"
+                                >
+                                    Guide
+                                </a>
                             </li>
                             <li className="text-xs xl:text-sm">
-                                Terms of service
+                                <a
+                                    href="#faqs"
+                                    className="hover:text-secondary"
+                                >
+                                    FAQs
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#press-kets"
+                                    className="hover:text-secondary"
+                                >
+                                    Press kets
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#compliance"
+                                    className="hover:text-secondary"
+                                >
+                                    Compliance
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#privacy-policy"
+                                    className="hover:text-secondary"
+                                >
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#terms-of-service"
+                                    className="hover:text-secondary"
+                                >
+                                    Terms of service
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div className="mt-3 flex flex-col items-center gap-5 xl:items-start">
                         <h4 className="text-sm xl:text-lg">Community</h4>
                         <ul className="flex flex-col items-center justify-center gap-2 xl:items-start">
-                            <li className="text-xs xl:text-sm">Shop</li>
-                            <li className="text-xs xl:text-sm">Blog</li>
-                            <li className="text-xs xl:text-sm">Forum</li>
-                            <li className="text-xs xl:text-sm">Membership</li>
-                            <li className="text-xs xl:text-sm">Help center</li>
-                            <li className="text-xs xl:text-sm">Support desk</li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#shop"
+                                    className="hover:text-secondary"
+                                >
+                                    Shop
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#blog"
+                                    className="hover:text-secondary"
+                                >
+                                    Blog
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#forum"
+                                    className="hover:text-secondary"
+                                >
+                                    Forum
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#membership"
+                                    className="hover:text-secondary"
+                                >
+                                    Membership
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#help-center"
+                                    className="hover:text-secondary"
+                                >
+                                    Help center
+                                </a>
+                            </li>
+                            <li className="text-xs xl:text-sm">
+                                <a
+                                    href="#support-desk"
+                                    className="hover:text-secondary"
+                                >
+                                    Support desk
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-5 xl:hidden">
                     <div className="grid grid-cols-4 gap-5">
-                        <img src={fb} />
-                        <img src={twitter} />
-                        <img src={youtube} />
-                        <img src={medium} />
+                        <a
+                            className="cursor-pointer"
+                            href="https://facebook.com"
+                            target="_blank"
+                        >
+                            <img src={fb} />
+                        </a>
+                        <a
+                            className="cursor-pointer"
+                            href="https://x.com"
+                            target="_blank"
+                        >
+                            <img src={twitter} />
+                        </a>
+                        <a
+                            className="cursor-pointer"
+                            href="https://youtube.com"
+                            target="_blank"
+                        >
+                            <img src={youtube} />
+                        </a>
+                        <a
+                            className="cursor-pointer"
+                            href="https://medium.com"
+                            target="_blank"
+                        >
+                            <img src={medium} />
+                        </a>
                     </div>
                     <p className="text-center text-xs">
                         &copy; Campoal. Powered by Conikal LLC
@@ -85,10 +233,34 @@ const Footer = () => {
                     &copy; Campoal. Powered by Conikal LLC
                 </p>
                 <div className="grid grid-cols-4 gap-5">
-                    <img src={fb} />
-                    <img src={twitter} />
-                    <img src={youtube} />
-                    <img src={medium} />
+                    <a
+                        className="cursor-pointer"
+                        href="https://facebook.com"
+                        target="_blank"
+                    >
+                        <img src={fb} />
+                    </a>
+                    <a
+                        className="cursor-pointer"
+                        href="https://x.com"
+                        target="_blank"
+                    >
+                        <img src={twitter} />
+                    </a>
+                    <a
+                        className="cursor-pointer"
+                        href="https://youtube.com"
+                        target="_blank"
+                    >
+                        <img src={youtube} />
+                    </a>
+                    <a
+                        className="cursor-pointer"
+                        href="https://medium.com"
+                        target="_blank"
+                    >
+                        <img src={medium} />
+                    </a>
                 </div>
             </div>
         </div>
