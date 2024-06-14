@@ -7,9 +7,10 @@ import {
     NavigationMenuItem,
     NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-import GlobalButton from "./GlobalButton"
+import GlobalButton from "./global-button"
 import { useState } from "react"
 import { Input } from "./ui/input"
+import StartCampaignButton from "./start-campaign-button"
 
 const Navbar = () => {
     const [userWantsToSearch, setUserWantsToSearch] = useState(false)
@@ -47,7 +48,9 @@ const Navbar = () => {
                 className={`items-center justify-between bg-white p-3 sm:justify-between ${userWantsToSearch ? "hidden" : "flex"}`}
             >
                 <div className="flex w-full items-center justify-start gap-10">
-                    <img src={logo} className="w-40" />
+                    <a href="/">
+                        <img src={logo} className="w-40" />
+                    </a>
 
                     <GlobalButton />
                 </div>
@@ -128,9 +131,7 @@ const Navbar = () => {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <Button className="hidden rounded-xl sm:flex">
-                        <Edit className="mr-2 h-4 w-4" /> Start a campaign
-                    </Button>
+                    <StartCampaignButton />
 
                     <DualButton
                         firstButtonVariant="secondary"
