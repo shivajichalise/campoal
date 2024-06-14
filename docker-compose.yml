@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    frontend:
+        build: frontend
+        container_name: campoal_frontend
+        ports:
+            - 5173:5173
+        restart: unless-stopped
+        volumes:
+            - ./frontend:/frontend
+            - /frontend/node_modules
+        stdin_open: true
+        tty: true
