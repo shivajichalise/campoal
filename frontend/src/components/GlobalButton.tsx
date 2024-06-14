@@ -18,7 +18,7 @@ import {
 import { useState } from "react"
 
 const GlobalButton = () => {
-    const [selectedCountryName, setSelectedCountryName] = useState<string>("")
+    const [_selectedCountryName, setSelectedCountryName] = useState<string>("")
     const [selectedCountryCode, setSelectedCountryCode] = useState<
         TCountryCode | false
     >(false)
