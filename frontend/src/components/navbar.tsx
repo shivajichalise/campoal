@@ -10,22 +10,11 @@ import {
 import GlobalButton from "./global-button"
 import { useState } from "react"
 import { Input } from "./ui/input"
-import { Label } from "@/components/ui/label"
-import {
-    Sheet,
-    SheetClose,
-    SheetContent,
-    SheetDescription,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import StartCampaignButton from "./start-campaign-button"
 import { Separator } from "./ui/separator"
 
 const Navbar = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
     const [userWantsToSearch, setUserWantsToSearch] = useState(false)
 
     const toggleSearch = () => {
@@ -241,6 +230,7 @@ const Navbar = () => {
                             >
                                 Sign in
                             </a>
+                            <Separator className="my-3" />
                         </div>
                     </SheetContent>
                 </Sheet>

@@ -54,10 +54,10 @@ const GlobalButton = () => {
                 <DropdownMenuGroup>
                     {Object.entries(countries).map((country) => {
                         const countryName = country[1].name
-                        const countryCode: false | TCountryCode =
-                            getCountryCode(countryName)
+                        const countryCode = getCountryCode(countryName)
                         return (
                             <DropdownMenuItem
+                                key={country[0]}
                                 onClick={() =>
                                     selectCountryHandler(
                                         countryName,
