@@ -1,20 +1,25 @@
 {
-  "name": "campoal",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
-  "scripts": {
-    "client": "npm run dev --prefix frontend",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shivajichalise/campoal.git"
-  },
-  "author": "Shivaji Chaliser",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shivajichalise/campoal/issues"
-  },
-  "homepage": "https://github.com/shivajichalise/campoal#readme"
+    "name": "campoal",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "client": "npm run dev --prefix frontend",
+        "predeploy": "npm run build --prefix frontend",
+        "deploy": "gh-pages -d frontend/dist",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shivajichalise/campoal.git"
+    },
+    "author": "Shivaji Chaliser",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shivajichalise/campoal/issues"
+    },
+    "homepage": "https://shivajichalise.github.io/campoal",
+    "devDependencies": {
+        "gh-pages": "^6.1.1"
+    }
 }

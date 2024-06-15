@@ -38,7 +38,7 @@ const Contact = () => {
 
     return (
         <div
-            className="bg-primary flex items-center justify-center px-16 py-10 sm:bg-transparent"
+            className="bg-primary flex items-center justify-center px-7 py-10 sm:bg-transparent sm:px-16"
             style={{
                 backgroundImage: `url(${backgroundImg})`,
                 backgroundRepeat: "no-repeat",
