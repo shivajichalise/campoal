@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card"
 
-import activistsIcon from "@/assets/activists.png"
-import legislatorsIcon from "@/assets/legislators.png"
-import organizationsIcon from "@/assets/organizations.png"
-import reportersIcon from "@/assets/reporters.png"
+import activistsIcon from "@/assets/images/activists.svg"
+import legislatorsIcon from "@/assets/images/legislators.svg"
+import organizationsIcon from "@/assets/images/organizations.svg"
+import reportersIcon from "@/assets/images/reporters.svg"
 
 const PlatformUsers = () => {
     return (

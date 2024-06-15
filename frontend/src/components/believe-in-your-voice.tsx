@@ -1,4 +1,4 @@
-import voicesImg from "@/assets/voices.png"
+import voicesImg from "@/assets/images/voices.svg"
 
 const BelieveInVoice = () => {
     return (

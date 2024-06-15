@@ -1,4 +1,4 @@
-import logo from "@/assets/campoal-logo.svg"
+import logo from "@/assets/images/campoal-logo.svg"
 import { Button } from "./ui/button"
 import { Edit, Menu, Search, X } from "lucide-react"
 import { DualButton } from "./dual-button"

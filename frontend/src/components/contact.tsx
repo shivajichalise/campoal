@@ -1,4 +1,4 @@
-import backgroundImg from "@/assets/contact-background.png"
+import backgroundImg from "@/assets/images/contact-background.svg"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"

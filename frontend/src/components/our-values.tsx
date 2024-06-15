@@ -1,4 +1,4 @@
-import backgroundImg from "@/assets/our-values-background.png"
+import backgroundImg from "@/assets/images/our-values-background.svg"
 
 const OurValues = () => {
     return (

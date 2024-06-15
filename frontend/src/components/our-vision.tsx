@@ -1,5 +1,5 @@
 import Hero from "./hero"
-import hero2Image from "@/assets/our-vision.png"
+import hero2Image from "@/assets/images/our-vision.svg"
 
 const OurVision = () => {
     const hero2 = {

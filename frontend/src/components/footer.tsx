@@ -1,11 +1,11 @@
-import img1 from "@/assets/footer-img-1.png"
-import img2 from "@/assets/footer-img-2.png"
-import img3 from "@/assets/footer-img-3.png"
-import img4 from "@/assets/footer-img-4.png"
-import fb from "@/assets/fb.png"
-import twitter from "@/assets/twitter.png"
-import youtube from "@/assets/youtube.png"
-import medium from "@/assets/medium.png"
+import img1 from "@/assets/images/footer-img-1.svg"
+import img2 from "@/assets/images/footer-img-2.svg"
+import img3 from "@/assets/images/footer-img-3.svg"
+import img4 from "@/assets/images/footer-img-4.svg"
+import fb from "@/assets/images/fb.svg"
+import twitter from "@/assets/images/twitter.svg"
+import youtube from "@/assets/images/youtube.svg"
+import medium from "@/assets/images/medium.svg"
 
 const Footer = () => {
     return (

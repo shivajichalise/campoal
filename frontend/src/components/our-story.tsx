@@ -1,7 +1,7 @@
-import img1 from "@/assets/our-story-1.png"
-import img2 from "@/assets/our-story-2.png"
-import img3 from "@/assets/our-story-3.png"
-import img4 from "@/assets/our-story-4.png"
+import img1 from "@/assets/images/our-story-1.svg"
+import img2 from "@/assets/images/our-story-2.svg"
+import img3 from "@/assets/images/our-story-3.svg"
+import img4 from "@/assets/images/our-story-4.svg"
 
 const OurStory = () => {
     return (

@@ -1,8 +1,8 @@
 import { Button } from "./ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import teamMember1 from "@/assets/team-member-1.png"
-import teamMember2 from "@/assets/team-member-2.png"
-import teamMember3 from "@/assets/team-member-3.png"
+import teamMember1 from "@/assets/images/team-member-1.svg"
+import teamMember2 from "@/assets/images/team-member-2.svg"
+import teamMember3 from "@/assets/images/team-member-3.svg"
 import { Card, CardContent } from "./ui/card"
 
 const OurTeam = () => {
