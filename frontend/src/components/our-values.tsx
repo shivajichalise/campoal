@@ -3,7 +3,7 @@ import backgroundImg from "@/assets/images/our-values-background.png"
 const OurValues = () => {
     return (
         <div
-            className="flex h-fit items-center justify-center px-16 py-16 lg:py-32"
+            className="flex h-fit items-center justify-center px-10 py-16 lg:py-32"
             style={{
                 backgroundImage: `url(${backgroundImg})`,
                 backgroundRepeat: "no-repeat",
