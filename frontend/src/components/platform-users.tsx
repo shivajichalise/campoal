@@ -8,7 +8,7 @@ import reportersIcon from "@/assets/reporters.png"
 const PlatformUsers = () => {
     return (
         <div className="flex items-center justify-center px-12 py-16">
-            <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-around">
+            <div className="flex flex-col items-center gap-4 lg:w-11/12 lg:flex-row lg:justify-around">
                 <div className="flex flex-col items-center gap-4 lg:w-2/6 lg:items-start">
                     <p className="text-text-100 md:text-lg lg:text-xl">
                         Who use platform?

@@ -5,10 +5,10 @@ import img4 from "@/assets/our-story-4.png"
 
 const OurStory = () => {
     return (
-        <div className="flex items-center justify-center px-10 py-16">
+        <div className="flex items-center justify-center px-20 py-16">
             <div className="flex flex-col items-center justify-center gap-10 pt-6 xl:flex-row">
                 <div className="flex flex-col items-center xl:w-2/5 xl:items-start">
-                    <h1 className="text-text-200 mb-4 text-center text-3xl font-bold md:text-4xl lg:text-left lg:text-6xl">
+                    <h1 className="text-text-200 mb-8 text-center text-3xl font-bold md:text-4xl lg:text-left lg:text-6xl">
                         Our Story
                     </h1>
                     <p className="text-text-100 text-justify text-sm md:text-lg xl:text-left [&:not(:first-child)]:my-2">

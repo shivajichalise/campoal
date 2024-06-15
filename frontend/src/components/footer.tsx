@@ -9,7 +9,7 @@ import medium from "@/assets/medium.png"
 
 const Footer = () => {
     return (
-        <div className="bg-tertiaryBackground flex flex-col items-center justify-center gap-16 px-16 py-16 text-white">
+        <div className="bg-tertiaryBackground flex flex-col items-center justify-center gap-16 px-10 py-16 text-white">
             <div className="flex flex-col items-center justify-center gap-10 xl:flex-row">
                 <div className="flex flex-col items-center justify-between gap-5 xl:w-2/5 xl:items-start">
                     <h1 className="text-center text-sm font-bold xl:text-lg">

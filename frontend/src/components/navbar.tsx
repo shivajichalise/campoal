@@ -63,7 +63,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <Button
                                     variant="ghost"
-                                    size="sm"
+                                    size="xs"
                                     className="text-black"
                                     onClick={toggleSearch}
                                 >
@@ -74,7 +74,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <Button
                                     variant="ghost"
-                                    size="sm"
+                                    size="xs"
                                     className="text-black"
                                 >
                                     <a href="/campaign">Campaign</a>
@@ -84,7 +84,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <Button
                                     variant="ghost"
-                                    size="sm"
+                                    size="xs"
                                     className="text-black"
                                 >
                                     <a href="/fundraiser">Fundraiser</a>
@@ -94,7 +94,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <Button
                                     variant="ghost"
-                                    size="sm"
+                                    size="xs"
                                     className="text-black"
                                 >
                                     <a href="/membership">Membership</a>
@@ -104,7 +104,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <Button
                                     variant="ghost"
-                                    size="sm"
+                                    size="xs"
                                     className="text-black"
                                 >
                                     <a href="/about">About</a>
@@ -114,7 +114,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <Button
                                     variant="ghost"
-                                    size="sm"
+                                    size="xs"
                                     className="text-black"
                                 >
                                     <a href="/contact">Contact</a>
@@ -124,7 +124,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <Button
                                     variant="ghost"
-                                    size="sm"
+                                    size="xs"
                                     className="text-black"
                                 >
                                     <a href="/blog">Blog</a>
