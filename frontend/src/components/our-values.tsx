@@ -10,7 +10,7 @@ const OurValues = () => {
                 backgroundSize: "cover",
             }}
         >
-            <div className="flex flex-col items-center gap-16 pt-6 md:items-start lg:w-10/12 lg:justify-around lg:pt-28">
+            <div className="flex flex-col items-center gap-10 pt-6 md:items-start lg:w-10/12 lg:justify-around lg:gap-16 lg:pt-28">
                 <h1 className="text-primary text-center text-3xl font-bold md:text-4xl lg:text-left lg:text-6xl">
                     Our Values
                 </h1>

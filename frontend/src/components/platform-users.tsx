@@ -7,10 +7,10 @@ import reportersIcon from "@/assets/images/reporters.svg"
 
 const PlatformUsers = () => {
     return (
-        <div className="flex items-center justify-center px-12 py-16">
-            <div className="flex flex-col items-center gap-4 lg:w-11/12 lg:flex-row lg:justify-around">
-                <div className="flex flex-col items-center gap-4 lg:w-2/6 lg:items-start">
-                    <p className="text-text-100 md:text-lg lg:text-xl">
+        <div className="flex items-center justify-center px-16 py-16 lg:px-28">
+            <div className="flex flex-col items-center gap-4 lg:w-11/12 lg:flex-row lg:justify-between">
+                <div className="flex flex-col items-center gap-8 lg:w-2/5 lg:items-start">
+                    <p className="text-text-100 md:text-lg lg:text-2xl">
                         Who use platform?
                     </p>
                     <h1 className="text-text-200 text-center text-xl font-extrabold lg:text-left lg:text-5xl">
