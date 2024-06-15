@@ -227,7 +227,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="hidden w-4/5 items-end justify-between xl:flex">
-                <p className="text-center text-xs">
+                <p className="text-center text-sm">
                     &copy; Campoal. Powered by Conikal LLC
                 </p>
                 <div className="grid grid-cols-4 gap-5">
