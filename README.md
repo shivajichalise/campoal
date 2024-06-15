@@ -104,7 +104,8 @@ campoal/
     │   │   │   └── <reusable_components_from_shadcn/ui>
     │   │   └── <own_components>
     │   ├── assets/
-    │   │   └── ...
+    │   │   ├── images/
+    │   │   │   └── <all_required_images>
     │   ├── lib/
     │   │   └── <any_utility-functions>
     │   ├── schemas/
@@ -165,4 +166,3 @@ Above three are the only major libraries/frameworks that I have used. Except for
 Star the repository on [Github](https://github.com/shivajichalise/campoal)
 
 Follow on [Github](https://github.com/shivajichalise)
-
